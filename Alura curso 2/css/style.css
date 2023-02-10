@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --cor-primaria:#000000;
+    --cor-secudanria:#f6f6f6;
+    --cor-terciaria:#22D4FD;
+
+    --fonte-primaria:'Montserrat', sans-serif;
+    --fonte-secundaria: 'Krona One', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background-color:var(--cor-primaria);
+    color: var(--cor-secudanria);
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+.cabecalho {
+    padding: 2% 0% 0% 7%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link {
+    font-family: var(--fonte-primaria);
+    font-weight: 600;
+    font-size: 1.5rem;
+    color:var(--cor-terciaria);
+    text-decoration: none;
+}
+
+.titulo-descricao {
+    color:var(--cor-terciaria);
+}
+
+.apresentacao {
+    display: flex;
+    align-items: center;
+    padding: 8% 7%;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.apresentacao__conteudo {
+    width: 50%;
+    display:flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 2.25rem;
+    font-family: var(--fonte-secundaria);
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 1.5rem;
+    font-family:  var(--fonte-primaria);
+}
+
+.apresentacao__links__titulo {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.apesentacao__links {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.apresentacao__links__link {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--cor-terciaria);
+    width:50%;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    padding: 21.5px 0;
+    font-family: var(--fonte-primaria);
+    text-decoration: none;
+    text-align: center;
+    color: var(--cor-secudanria);
+    font-weight: 600;
+}
+
+.apresentacao__links__link:hover {
+    background-color: #272727;
+    border-color: #86E9FF;
+}
+
+.apresentacao__imagem {
+    width: 50%;
+}
+
+
+.rodape {
+    background-color: var(--cor-terciaria);
+    color: var(--cor-primaria);
+    padding: 22.5px;
+    font-weight: 400;
+    font-family: var(--fonte-primaria);
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 1200px) {
+    .cabecalho {
+        padding: 10%;
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao__conteudo {
+        width: auto;
+    }
+}
