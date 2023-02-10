@@ -1,0 +1,163 @@
+header {
+    background-color: #bbbbbb;
+    padding: 20px 0;
+}
+
+.caixa {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+nav {
+    position:absolute;
+    top:110px;
+    right:0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #7261A3;
+}
+
+nav a:active{
+    color:#42385F;
+}
+
+.produtos {
+    width: 920px;
+    margin: 0 auto;
+    padding:50px;
+}
+
+.produtos li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align:top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+
+.produtos li:hover{
+    border-color: #7261A3;
+}
+
+.produtos li:hover h2{
+    font-size:34px;
+}
+
+.produtos li:active{
+    border-color: #A15E49;
+}
+
+.produtos li:hover .produtos-preco {
+    color:#7261A3;
+}
+
+.produtos li:active .produtos-preco {
+    color: #cccccc
+}
+
+.produtos h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produtos-descricao {
+    font-size: 18px;
+    text-align: center;
+}
+
+.produtos-preco {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer {
+    text-align:center;
+    background:url(bg.jpg);
+    padding: 40px;
+    color: #ffffff;
+}
+
+.copyrigth {
+    margin:20px 0 0;
+    font-size: 13px;
+}
+
+main {
+    width: 940px;
+    margin: 0 auto;
+}
+
+form {
+    margin: 40px 0;
+}
+
+form label, form legend {
+    font-size: 20px;
+    display:block;
+    margin: 0 0 10px;
+}
+
+.checkbox {
+    margin: 20px 0;
+}
+
+.checkbox:hover{
+    cursor:pointer;
+}
+
+.formulario:hover{
+    cursor:pointer;
+}
+
+.enviar {
+    width: 40%;
+    padding: 15px 0;
+    background-color: orange;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.enviar:hover {
+    background-color: darkorange;
+    transform: scale(1.2);
+}
+
+table {
+    margin: 20px 0 40px;
+}
+
+th {
+    background-color: #555555;
+    color:#ffffff;
+    font-weight: bold;
+}
+
+td, th {
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}
